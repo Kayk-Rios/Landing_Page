@@ -1,0 +1,129 @@
+body{
+    
+    background-color: rgb(34, 34 ,34);
+    color: white;
+    font-family: sans-serif;
+    max-width: 1200px;
+    margin: 0 auto ;
+    padding: 15px;
+}
+header{
+    display: flex;
+    flex-direction: row;/*transforma o cabeçalho em linha*/
+    justify-content: space-between;/*faz um espaço entre os elementos*/
+    align-items: center;/*alinhou os itens*/
+
+}
+#tittle{
+   flex-direction:column ;
+    line-height: 15px;/*altura de linhas*/
+}li{
+    display: inline-block;/*faz as linhas ficarem ao lado e nao a abaixo*/
+    margin: 20px;
+}
+a{
+    transition: transform 0.2s; /* Adicione a transição para suavizar o movimento */
+    color: white;
+
+}
+a:hover{
+    color:  rgb(59, 23, 95);
+    transform: translateY(-25px);/*faz com que os nomes se movimentaem se passar o curso por cima*/
+    transition: all 0.2s; /*suaviza o curso */
+}
+.a-li{
+    border-radius: 100px;
+    border: 0.1rem solid rebeccapurple;
+    padding: 15px;
+   
+}
+.a-li:hover{
+   background-color: blueviolet;
+   transition: all 0.2s;
+   color: white;
+}
+
+h1{
+  font-weight: 200;/*afinou a font*/
+    
+}
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
+
+}
+h2{
+    font-size: 56px;
+    line-height: 10px;
+    
+}
+span{
+    color: blueviolet;
+}
+p{
+    line-height: 23px;
+    max-width: 500px;/*largura maxima do conteudo do p*/
+   
+}
+img{
+    width: 580px;
+
+}
+form{
+    display: flex;/*fez um ficar ao lado do outro */
+    flex-direction: column;/*fez ficar abaixo como se fosse uma coluna*/
+    width: 70%;
+}
+form .inputS{ 
+      height: 50px;
+    width: 50%;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold  ;
+ 
+}
+form .inputS:hover{ 
+cursor: pointer;;
+
+}
+input{
+    border-radius: 1rem ;
+    margin-top: 20px;
+    padding: 15px;
+    height: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+/*@media*/
+@media screen and (max-width: 949px){
+ header{
+    flex-direction: column;/*de reto para coluna um abaixo do outro*/
+ }
+ main{
+    flex-direction: column;
+ }
+h2{
+    font-size: 36px;
+}
+form{
+   margin: 0 auto; /*botei o formulario no meio*/
+   
+}
+.inputS{
+ align-self: center;/*alinhei o submit*/
+}
+img{
+   display: none;
+ 
+}
+main{
+    margin-bottom: 50px;
+}
+ul{
+    text-align: center;
+}
+
+}
+
